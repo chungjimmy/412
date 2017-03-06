@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>404</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <meta name="msapplication-TileColor" content="#5bc0de" />
+        <meta name="msapplication-TileImage" content="assets/img/metis-tile.png" />
+
+        <!-- Bootstrap -->
+        <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.1/css/bootstrap.min.css">
+
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.2.0/css/font-awesome.min.css">
+
+        <!-- Metis core stylesheet -->
+        <link rel="stylesheet" href="assets/css/main.min.css">
+    </head>
+    <body class="error">
+        <div class="container">
+            <div class="col-lg-8 col-lg-offset-2 text-center">
+                <div class="logo">
+                    <h1>404</h1>
+                </div>
+                <p class="lead text-muted">The requested url could not be found on this server.</p>
+                <div class="clearfix"></div>
+
+                <div class="clearfix"></div>
+                <br>
+                <div class="col-lg-6 col-lg-offset-3">
+                    <div class="btn-group btn-group-justified">
+                        <a href="index.html" class="btn btn-warning">Return to Home Page</a> 
+                    </div>
+                    <div id="pic" class="collapse">
+                        <img src="http://todaymade.com/blog/wp-content/uploads/2013/03/troll-face.png" class="img-responsive" alt="Responsive image">
+                    </div>
+                    <button type="button" class="btn btn-link" data-toggle="collapse" data-target="#pic"><p style = "color: white" > </p></button>
+                    <p id="fade" style="color:black; opacity:0.0">Click Above</p>
+                    <script>
+                        $(document).ready(function () {
+                            $("#fade").ready(function () {
+                                var div = $("#fade");
+                                div.animate({opacity: 1.0}, 3000);
+                    
+                            });
+                        });
+                    </script> 
+                </div>
+            </div><!-- /.col-lg-8 col-offset-2 -->
+        </div>
+    </body>
